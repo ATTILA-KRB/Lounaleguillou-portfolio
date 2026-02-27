@@ -3,28 +3,26 @@
     class="group cursor-pointer pt-6 transition-transform duration-700 hover:-translate-y-2 hover:drop-shadow-sm"
     :class="featured ? 'border-t-[3px] border-accent' : 'border-t border-fg/20'"
   >
-    <!-- Image — aspect 4:5, grayscale → color -->
-    <div
-      class="relative aspect-[4/5] overflow-hidden mb-5 shadow-[0_4px_20px_rgba(0,0,0,0.06)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-700"
-    >
-        <img
-          v-if="cover"
-          :src="cover"
-          :alt="`Image illustrant l'article: ${title}`"
-          class="img-editorial absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-        />
+    <!-- Image — aspect 4:5 -->
+    <div class="relative aspect-[4/5] mb-5">
+      <img
+        v-if="cover"
+        :src="cover"
+        :alt="`Image illustrant l'article: ${title}`"
+        class="block w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-90"
+        loading="lazy"
+      />
       <!-- Placeholder when no image -->
       <div
         v-else
-        class="w-full h-full bg-muted-bg flex items-center justify-center img-editorial"
+        class="w-full h-full bg-muted-bg flex items-center justify-center"
       >
         <span class="font-heading text-[2.5rem] text-muted-fg/30">
           {{ sourceInitials }}
         </span>
       </div>
-      <!-- Inner border -->
-      <div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)] pointer-events-none"></div>
+      <!-- Hover overlay -->
+      <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/5 transition-colors duration-700 pointer-events-none"></div>
     </div>
 
     <!-- Meta -->

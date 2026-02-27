@@ -120,24 +120,6 @@ html.dark .paper-noise {
   transform: translateX(0);
 }
 
-/* ═══════════════════════════════════════════
-   IMAGE TRANSITIONS (tout en couleur)
-   ═══════════════════════════════════════════ */
-.img-editorial {
-  transition: transform 1500ms var(--ease-luxury);
-}
-
-@media (hover: hover) {
-  .group:hover .img-editorial {
-    transform: scale(1.05);
-  }
-}
-
-@media (hover: none) {
-  .group:active .img-editorial {
-    transform: scale(1.02);
-  }
-}
 
 /* ═══════════════════════════════════════════
    SCROLLBAR
