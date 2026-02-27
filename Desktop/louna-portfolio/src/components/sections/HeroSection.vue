@@ -19,7 +19,7 @@
 
         <!-- Subtitle -->
         <p class="text-[0.95rem] leading-[1.75] text-muted-fg max-w-[440px]">
-          Journaliste en presse indépendante, passionnée par l'écologie, la solidarité et les récits qui donnent la parole à celles et ceux qui font bouger les lignes.
+          Journaliste en presse indépendante et engagée. À travers l'écologie, la solidarité et la politique, je donne la parole à celles et ceux qui font bouger les lignes.
         </p>
 
         <!-- Buttons -->

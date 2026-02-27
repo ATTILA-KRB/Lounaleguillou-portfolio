@@ -20,6 +20,17 @@
       {{ org }}
     </div>
 
+    <!-- Tags -->
+    <div v-if="tags && tags.length" class="flex flex-wrap gap-2 mb-3">
+      <span
+        v-for="tag in tags"
+        :key="tag"
+        class="px-2.5 py-1 border border-fg/15 text-[0.55rem] font-medium uppercase tracking-[0.15em] text-muted-fg hover:border-accent hover:text-accent transition-all duration-500 cursor-default"
+      >
+        {{ tag }}
+      </span>
+    </div>
+
     <!-- Description -->
     <p class="text-[0.85rem] text-muted-fg leading-[1.7] max-w-[560px]">
       {{ description }}
@@ -33,5 +44,6 @@ defineProps({
   role: String,
   org: String,
   description: String,
+  tags: Array,
 })
 </script>

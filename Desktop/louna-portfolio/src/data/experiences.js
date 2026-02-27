@@ -5,6 +5,7 @@ export const experiences = [
     role: 'Alternante Journaliste',
     org: 'Anciela — Agir à Lyon',
     description: 'Rédaction d\'articles sur l\'écologie, la solidarité et les initiatives citoyennes à Lyon. Veille informationnelle, interviews, travail éditorial complet au format mensuel.',
+    tags: ['Presse indépendante', 'Écologie'],
   },
   {
     id: 'agir-lyon-stage',
@@ -12,6 +13,7 @@ export const experiences = [
     role: 'Stagiaire Journaliste',
     org: 'Anciela — Agir à Lyon',
     description: 'Rédaction d\'articles au format mensuel, interviews et veille informationnelle pour le magazine indépendant écologique lyonnais.',
+    tags: ['Presse indépendante', 'Écologie'],
   },
   {
     id: '76actu',
@@ -19,6 +21,7 @@ export const experiences = [
     role: 'Journaliste',
     org: '76Actu',
     description: 'Rédaction d\'articles web, reportages terrain et couverture de sujets d\'initiatives locales.',
+    tags: ['Presse locale', 'Web'],
   },
   {
     id: 'paris-normandie-pigiste',
@@ -26,6 +29,7 @@ export const experiences = [
     role: 'Pigiste',
     org: 'Paris Normandie',
     description: 'Rédaction d\'articles de presse, interviews et veille informationnelle en presse quotidienne régionale.',
+    tags: ['PQR'],
   },
   {
     id: 'club-presse',
@@ -33,6 +37,7 @@ export const experiences = [
     role: 'Volontaire en Service Civique',
     org: 'Club de la Presse et de la Communication de Normandie',
     description: 'Éducation aux Médias et à l\'Information auprès des écoles primaires. Construction d\'ateliers pour les enfants et rédaction de newsletters.',
+    tags: ['EMI', 'Service civique'],
   },
   {
     id: 'paris-normandie-stage',
@@ -40,6 +45,7 @@ export const experiences = [
     role: 'Stagiaire Journaliste',
     org: 'Paris Normandie',
     description: 'Rédaction d\'articles web et reportages terrain en presse quotidienne régionale.',
+    tags: ['PQR'],
   },
   {
     id: 'master',
@@ -47,6 +53,7 @@ export const experiences = [
     role: 'Master Journalisme Nouvelles Pratiques Journalistiques',
     org: 'Université Lumière Lyon II',
     description: 'Formation approfondie en journalisme\u00a0: techniques rédactionnelles, reportage, enquête, droit de la presse, éthique journalistique.',
+    tags: ['Formation'],
   },
   {
     id: 'licence',
@@ -54,5 +61,6 @@ export const experiences = [
     role: 'Licence d\'Anglais LLCER',
     org: 'Université Rouen Normandie',
     description: 'Formation en langues, littératures et civilisations étrangères et régionales, spécialité anglais.',
+    tags: ['Formation'],
   },
 ]
