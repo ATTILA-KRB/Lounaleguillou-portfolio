@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — Luxury / Editorial
+   ═══════════════════════════════════════════ */
+@theme {
+  --color-bg: #F9F8F6;
+  --color-fg: #1A1A1A;
+  --color-muted-bg: #EBE5DE;
+  --color-muted-fg: #6C6863;
+  --color-accent: #D4AF37;
+  --color-accent-fg: #FFFFFF;
+
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  --ease-luxury: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ═══════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* No rounded corners anywhere */
+*, *::before, *::after {
+  border-radius: 0 !important;
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY UTILITIES
+   ═══════════════════════════════════════════ */
+
+/* Drop cap for intro paragraphs */
+.drop-cap::first-letter {
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  margin-right: 0.75rem;
+  margin-top: 0.15rem;
+  color: var(--color-fg);
+  font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════
+   PAPER NOISE TEXTURE
+   ═══════════════════════════════════════════ */
+.paper-noise {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════
+   GOLD SLIDE BUTTON ANIMATION
+   ═══════════════════════════════════════════ */
+.btn-gold-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold-slide .gold-layer {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-accent);
+  transform: translateX(-101%);
+  transition: transform 0.5s var(--ease-luxury);
+}
+
+.btn-gold-slide:hover .gold-layer {
+  transform: translateX(0);
+}
+
+/* ═══════════════════════════════════════════
+   IMAGE GRAYSCALE TRANSITIONS
+   ═══════════════════════════════════════════ */
+.img-editorial {
+  filter: grayscale(100%);
+  transition: filter 1500ms var(--ease-luxury), transform 1500ms var(--ease-luxury);
+}
+
+.group:hover .img-editorial {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 26, 26, 0.4);
+}
+
+/* ═══════════════════════════════════════════
+   PAGE TRANSITIONS
+   ═══════════════════════════════════════════ */
+.page-enter-active {
+  transition: opacity 0.5s var(--ease-luxury), transform 0.5s var(--ease-luxury);
+}
+.page-leave-active {
+  transition: opacity 0.3s var(--ease-luxury);
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+/* ═══════════════════════════════════════════
+   FADE IN ANIMATION (scroll reveal)
+   ═══════════════════════════════════════════ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.draw-line {
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 1s var(--ease-luxury), opacity 0.5s ease;
+}
+
+.draw-line.visible {
+  max-width: 100%;
+  opacity: 1;
+}
+
+.draw-line-short {
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.8s var(--ease-luxury) 0.1s, opacity 0.5s ease;
+}
+
+.draw-line-short.visible {
+  max-width: 3rem; /* équivalent à w-12 */
+  opacity: 1;
+}
+
+/* ═══════════════════════════════════════════
+   VERTICAL TEXT
+   ═══════════════════════════════════════════ */
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+
+/* ═══════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .img-editorial {
+    filter: none;
+  }
+}
