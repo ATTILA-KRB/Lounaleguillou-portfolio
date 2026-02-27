@@ -23,12 +23,12 @@
         </p>
 
         <!-- Buttons -->
-        <div class="inline-flex flex-col gap-4 mt-2">
-          <div class="flex flex-col sm:flex-row gap-4">
-            <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf" target="_blank" class="w-full sm:w-auto">
+        <div class="flex flex-col gap-4 mt-2 max-w-[340px]">
+          <div class="grid grid-cols-2 gap-4">
+            <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf" target="_blank" class="w-full !px-4">
               Télécharger mon CV
             </BaseButton>
-            <BaseButton variant="secondary" href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/" target="_blank" rel="noopener" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/" target="_blank" rel="noopener" class="w-full !px-4">
               LinkedIn ↗
             </BaseButton>
           </div>
