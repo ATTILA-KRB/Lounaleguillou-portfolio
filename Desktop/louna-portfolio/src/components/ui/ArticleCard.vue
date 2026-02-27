@@ -9,7 +9,7 @@
         v-if="cover"
         :src="cover"
         :alt="`Image illustrant l'article: ${title}`"
-        class="block w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-90"
+        class="block w-full h-full object-cover transition-[filter] duration-700 group-hover:brightness-95"
         loading="lazy"
       />
       <!-- Placeholder when no image -->
