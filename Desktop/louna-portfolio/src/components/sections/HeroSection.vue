@@ -14,7 +14,7 @@
         <!-- Title — extreme type scale -->
         <h1 class="font-heading text-[3.2rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-normal leading-[0.9] tracking-tight">
           Louna<br>
-          <span class="text-accent">Le Guillou</span>
+          <em class="italic text-accent">Le Guillou</em>
         </h1>
 
         <!-- Subtitle -->
@@ -23,11 +23,16 @@
         </p>
 
         <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+        <div class="flex flex-col gap-4 mt-2">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf" target="_blank" class="w-full sm:w-auto">
+              Télécharger mon CV
+            </BaseButton>
+            <BaseButton variant="secondary" href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/" target="_blank" rel="noopener" class="w-full sm:w-auto">
+              LinkedIn ↗
+            </BaseButton>
+          </div>
           <BaseButton to="/portfolio" class="w-full sm:w-auto">Voir mon travail</BaseButton>
-          <BaseButton variant="secondary" href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/" target="_blank" rel="noopener" class="w-full sm:w-auto">
-            LinkedIn ↗
-          </BaseButton>
         </div>
       </div>
 
@@ -46,7 +51,7 @@
           <img
             src="/images/photo-profil.jpeg"
             alt="Portrait de Louna Le Guillou, journaliste"
-            class="img-editorial w-full h-full object-cover scale-[1.1] origin-top"
+            class="img-editorial w-full h-full object-cover scale-[1.1] origin-top grayscale"
           />
           <div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)] pointer-events-none"></div>
         </div>
