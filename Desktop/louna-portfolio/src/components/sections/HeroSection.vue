@@ -32,7 +32,7 @@
               LinkedIn ↗
             </BaseButton>
           </div>
-          <BaseButton to="/portfolio" class="w-full sm:w-auto">Voir mon travail</BaseButton>
+          <BaseButton to="/portfolio" class="w-full">Voir mon travail</BaseButton>
         </div>
       </div>
 
