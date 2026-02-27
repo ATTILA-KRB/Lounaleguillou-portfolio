@@ -124,13 +124,12 @@ html.dark .paper-noise {
    IMAGE TRANSITIONS (tout en couleur)
    ═══════════════════════════════════════════ */
 .img-editorial {
-  transform: scale(1.02);
   transition: transform 1500ms var(--ease-luxury);
 }
 
 @media (hover: hover) {
   .group:hover .img-editorial {
-    transform: scale(1.07);
+    transform: scale(1.05);
   }
 }
 

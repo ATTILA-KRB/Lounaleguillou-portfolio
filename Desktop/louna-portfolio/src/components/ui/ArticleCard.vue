@@ -11,7 +11,7 @@
           v-if="cover"
           :src="cover"
           :alt="`Image illustrant l'article: ${title}`"
-          class="img-editorial w-full h-full object-cover"
+          class="img-editorial absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
       <!-- Placeholder when no image -->
