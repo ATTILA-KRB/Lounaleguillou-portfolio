@@ -14,7 +14,7 @@
         <!-- Title — extreme type scale -->
         <h1 class="font-heading text-[3.2rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-normal leading-[0.9] tracking-tight">
           Louna<br>
-          Le <em class="italic text-accent">Guillou</em>
+          <span class="text-accent">Le Guillou</span>
         </h1>
 
         <!-- Subtitle -->

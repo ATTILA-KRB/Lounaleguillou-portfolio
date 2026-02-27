@@ -12,10 +12,10 @@
           Vous avez un projet, une question ou une opportunité ? N'hésitez pas à me contacter.
         </p>
         <a
-          href="mailto:contact@lounaleguillou.fr"
+          href="mailto:lglouna@icloud.com"
           class="font-heading text-[1.1rem] sm:text-[1.3rem] font-normal border-b border-white/30 pb-2 inline-block w-fit hover:border-accent hover:text-accent transition-all duration-500 break-all"
         >
-          contact@lounaleguillou.fr
+          lglouna@icloud.com
         </a>
         <div class="flex gap-6">
           <a

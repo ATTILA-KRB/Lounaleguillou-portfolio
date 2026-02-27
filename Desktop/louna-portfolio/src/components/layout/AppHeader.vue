@@ -6,7 +6,7 @@
     <div class="max-w-[1600px] mx-auto px-6 md:px-16 py-5 flex items-center justify-between">
       <!-- Logo -->
       <RouterLink to="/" class="font-heading text-[1.3rem] font-normal tracking-tight">
-        Louna Le Guillou
+        Louna <span class="text-accent">Le Guillou</span>
       </RouterLink>
 
       <!-- Desktop nav -->
@@ -20,6 +20,14 @@
         >
           {{ link.label }}
         </RouterLink>
+        <a
+          href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/"
+          target="_blank"
+          rel="noopener"
+          class="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-muted-fg hover:text-accent transition-colors duration-500"
+        >
+          LinkedIn ↗
+        </a>
       </div>
 
       <!-- Burger mobile -->
@@ -59,6 +67,15 @@
         >
           {{ link.label }}
         </RouterLink>
+        <a
+          href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/"
+          target="_blank"
+          rel="noopener"
+          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          :style="{ transitionDelay: `${links.length * 100}ms` }"
+        >
+          LinkedIn ↗
+        </a>
       </div>
     </Transition>
   </Teleport>

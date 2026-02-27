@@ -8,7 +8,7 @@
   --color-fg: #1A1A1A;
   --color-muted-bg: #EBE5DE;
   --color-muted-fg: #6C6863;
-  --color-accent: #D4AF37;
+  --color-accent: #6B7C5E;
   --color-accent-fg: #FFFFFF;
 
   --font-heading: "Playfair Display", Georgia, serif;
@@ -46,17 +46,17 @@ body {
 .drop-cap::first-letter {
   font-family: var(--font-heading);
   float: left;
-  font-size: 3.5rem;
-  line-height: 0.8;
+  font-size: 4.5rem;
+  line-height: 0.75;
   margin-right: 0.6rem;
-  margin-top: 0.15rem;
-  color: var(--color-fg);
-  font-weight: 400;
+  margin-top: 0.1rem;
+  color: var(--color-accent);
+  font-weight: 500;
 }
 
 @media (min-width: 640px) {
   .drop-cap::first-letter {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     margin-right: 0.75rem;
   }
 }
@@ -95,25 +95,18 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   IMAGE GRAYSCALE TRANSITIONS
+   IMAGE TRANSITIONS (tout en couleur)
    ═══════════════════════════════════════════ */
 .img-editorial {
-  filter: grayscale(0%);
-  transition: filter 1500ms var(--ease-luxury), transform 1500ms var(--ease-luxury);
+  transition: transform 1500ms var(--ease-luxury);
 }
 
-/* Appliquer le grayscale uniquement sur les appareils avec souris */
 @media (hover: hover) {
-  .img-editorial {
-    filter: grayscale(100%);
-  }
   .group:hover .img-editorial {
-    filter: grayscale(0%);
     transform: scale(1.05);
   }
 }
 
-/* Sur mobile, on applique juste un léger scale au "clic" (active) */
 @media (hover: none) {
   .group:active .img-editorial {
     transform: scale(1.02);
@@ -203,9 +196,5 @@ body {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
-  }
-
-  .img-editorial {
-    filter: none;
   }
 }

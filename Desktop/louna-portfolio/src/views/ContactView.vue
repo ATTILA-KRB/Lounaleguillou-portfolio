@@ -25,10 +25,10 @@
                 Email
               </span>
               <a
-                href="mailto:contact@lounaleguillou.fr"
+                href="mailto:lglouna@icloud.com"
                 class="font-heading text-[1rem] border-b border-fg/15 pb-0.5 hover:border-accent hover:text-accent transition-all duration-500"
               >
-                contact@lounaleguillou.fr
+                lglouna@icloud.com
               </a>
             </div>
             <div class="flex items-center gap-4">
