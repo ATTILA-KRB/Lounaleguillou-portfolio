@@ -20,7 +20,7 @@ export function useScrollReveal() {
       document.querySelectorAll('.fade-in, .draw-line, .draw-line-short').forEach((el) => {
         observer.observe(el)
       })
-    }, 100)
+    }, 600)
   })
 
   onUnmounted(() => {

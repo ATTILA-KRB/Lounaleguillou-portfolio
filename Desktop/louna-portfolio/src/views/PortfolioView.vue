@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section class="px-6 md:px-16 pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 fade-in">
+    <section class="px-6 sm:px-8 md:px-16 pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20">
       <div class="max-w-[1600px] mx-auto fade-in">
         <!-- Header -->
-        <div class="flex items-center gap-4 mb-4 fade-in">
+        <div class="flex items-center gap-3 sm:gap-4 mb-4 fade-in">
           <div class="h-px bg-muted-fg draw-line-short fade-in"></div>
-          <span class="text-[0.65rem] font-medium uppercase tracking-[0.25em] text-muted-fg">
+          <span class="text-[0.6rem] sm:text-[0.65rem] font-medium uppercase tracking-[0.25em] text-muted-fg">
             Mes publications
           </span>
         </div>
-        <h1 class="font-heading text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] font-normal leading-[0.95] mb-8 md:mb-12">
+        <h1 class="font-heading text-[2.2rem] sm:text-[3rem] md:text-[4.5rem] font-normal leading-[0.95] mb-6 sm:mb-8 md:mb-12">
           Mon <em class="italic text-accent">travail</em>
         </h1>
 
@@ -17,7 +17,7 @@
         <CategoryFilter v-model="activeFilter" />
 
         <!-- Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 fade-in" style="transition-delay: 150ms;">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-10 fade-in" style="transition-delay: 150ms;">
           <TransitionGroup name="card">
             <ArticleCard
               v-for="article in filteredArticles"

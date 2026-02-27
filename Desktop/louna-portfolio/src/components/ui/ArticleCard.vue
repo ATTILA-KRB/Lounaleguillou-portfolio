@@ -28,20 +28,20 @@
     </div>
 
     <!-- Meta -->
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-fg">
+    <div class="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+      <span class="text-[0.55rem] sm:text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-fg">
         {{ source }}<template v-if="issue"> {{ issue }}</template>
       </span>
       <template v-if="date">
         <span class="w-[3px] h-[3px] bg-muted-fg rounded-full"></span>
-        <span class="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-fg">
+        <span class="text-[0.55rem] sm:text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-fg">
           {{ date }}
         </span>
       </template>
     </div>
 
     <!-- Title -->
-    <h3 class="font-heading text-[1.1rem] font-normal leading-[1.35] text-fg group-hover:text-accent transition-colors duration-500">
+    <h3 class="font-heading text-[1rem] sm:text-[1.1rem] font-normal leading-[1.35] text-fg group-hover:text-accent transition-colors duration-500">
       {{ title }}
     </h3>
   </article>

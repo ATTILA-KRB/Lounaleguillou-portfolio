@@ -55,10 +55,10 @@
     <Transition name="mobile-menu">
       <div
         v-if="mobileOpen"
-        class="fixed inset-0 z-[200] bg-bg flex flex-col items-center justify-center gap-8"
+        class="fixed inset-0 z-[200] bg-bg flex flex-col items-center justify-center gap-4 sm:gap-8 px-6"
       >
         <button
-          class="absolute top-5 right-5 md:top-6 md:right-6 w-14 h-14 flex items-center justify-center text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-full bg-fg/5 hover:bg-fg/10 transition-colors"
+          class="absolute top-5 right-5 md:top-6 md:right-6 w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center text-xl sm:text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-full bg-fg/5 hover:bg-fg/10 transition-colors"
           @click="mobileOpen = false"
           aria-label="Fermer le menu"
         >
@@ -68,7 +68,7 @@
           v-for="(link, index) in links"
           :key="link.to"
           :to="link.to"
-          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          class="font-heading text-[1.75rem] sm:text-[2.5rem] font-normal transition-all duration-500 hover:text-accent py-2 sm:p-4 w-full text-center mobile-link"
           :style="{ transitionDelay: `${index * 100}ms` }"
           @click="mobileOpen = false"
         >
@@ -78,14 +78,14 @@
           href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/"
           target="_blank"
           rel="noopener"
-          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          class="font-heading text-[1.75rem] sm:text-[2.5rem] font-normal transition-all duration-500 hover:text-accent py-2 sm:p-4 w-full text-center mobile-link"
           :style="{ transitionDelay: `${links.length * 100}ms` }"
         >
           LinkedIn ↗
         </a>
         <button
           @click="toggle"
-          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          class="font-heading text-[1.75rem] sm:text-[2.5rem] font-normal transition-all duration-500 hover:text-accent py-2 sm:p-4 w-full text-center mobile-link cursor-pointer"
           :style="{ transitionDelay: `${(links.length + 1) * 100}ms` }"
         >
           {{ isDark ? '\u2600 Mode clair' : '\u263E Mode sombre' }}

@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-wrap gap-2 mb-12 border-b border-fg/10 pb-6">
+  <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-8 sm:mb-12 border-b border-fg/10 pb-4 sm:pb-6">
     <button
       v-for="cat in categories"
       :key="cat.key"
       @click="$emit('update:modelValue', cat.key)"
-      class="px-5 py-2 text-[0.65rem] font-medium uppercase tracking-[0.15em] cursor-pointer bg-transparent transition-all duration-300"
+      class="px-3 sm:px-5 py-1.5 sm:py-2 text-[0.6rem] sm:text-[0.65rem] font-medium uppercase tracking-[0.15em] cursor-pointer bg-transparent transition-all duration-300"
       :class="
         modelValue === cat.key
           ? 'text-fg border border-fg'
