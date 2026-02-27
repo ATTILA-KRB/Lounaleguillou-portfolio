@@ -13,7 +13,7 @@
         </p>
         <a
           href="mailto:contact@lounaleguillou.fr"
-          class="font-heading text-[1.2rem] md:text-[1.3rem] font-normal border-b border-white/30 pb-2 inline-block w-fit hover:border-accent hover:text-accent transition-all duration-500"
+          class="font-heading text-[1.1rem] sm:text-[1.3rem] font-normal border-b border-white/30 pb-2 inline-block w-fit hover:border-accent hover:text-accent transition-all duration-500 break-all"
         >
           contact@lounaleguillou.fr
         </a>

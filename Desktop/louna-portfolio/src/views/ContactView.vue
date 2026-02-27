@@ -59,7 +59,7 @@
           <BaseInput v-model="form.email" placeholder="Votre email" type="email" />
           <BaseInput v-model="form.subject" placeholder="Sujet" />
           <BaseInput v-model="form.message" placeholder="Votre message..." multiline />
-          <BaseButton type="submit" class="self-start">
+          <BaseButton type="submit" class="w-full sm:w-auto self-start">
             Envoyer le message
           </BaseButton>
         </form>

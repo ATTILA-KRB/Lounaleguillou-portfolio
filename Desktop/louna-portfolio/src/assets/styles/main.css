@@ -46,12 +46,19 @@ body {
 .drop-cap::first-letter {
   font-family: var(--font-heading);
   float: left;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 0.8;
-  margin-right: 0.75rem;
+  margin-right: 0.6rem;
   margin-top: 0.15rem;
   color: var(--color-fg);
   font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .drop-cap::first-letter {
+    font-size: 4.5rem;
+    margin-right: 0.75rem;
+  }
 }
 
 /* ═══════════════════════════════════════════
@@ -91,13 +98,26 @@ body {
    IMAGE GRAYSCALE TRANSITIONS
    ═══════════════════════════════════════════ */
 .img-editorial {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: filter 1500ms var(--ease-luxury), transform 1500ms var(--ease-luxury);
 }
 
-.group:hover .img-editorial {
-  filter: grayscale(0%);
-  transform: scale(1.05);
+/* Appliquer le grayscale uniquement sur les appareils avec souris */
+@media (hover: hover) {
+  .img-editorial {
+    filter: grayscale(100%);
+  }
+  .group:hover .img-editorial {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+}
+
+/* Sur mobile, on applique juste un léger scale au "clic" (active) */
+@media (hover: none) {
+  .group:active .img-editorial {
+    transform: scale(1.02);
+  }
 }
 
 /* ═══════════════════════════════════════════

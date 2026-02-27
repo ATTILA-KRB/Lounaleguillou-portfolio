@@ -23,9 +23,9 @@
         </p>
 
         <!-- Buttons -->
-        <div class="flex gap-4 flex-wrap mt-2">
-          <BaseButton to="/portfolio">Voir mon travail</BaseButton>
-          <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf">
+        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+          <BaseButton to="/portfolio" class="w-full sm:w-auto">Voir mon travail</BaseButton>
+          <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf" class="w-full sm:w-auto">
             Télécharger mon CV
           </BaseButton>
         </div>

@@ -40,20 +40,21 @@
     <Transition name="mobile-menu">
       <div
         v-if="mobileOpen"
-        class="fixed inset-0 z-[200] bg-bg flex flex-col items-center justify-center gap-10"
+        class="fixed inset-0 z-[200] bg-bg flex flex-col items-center justify-center gap-8"
       >
         <button
-          class="absolute top-6 right-6 w-11 h-11 flex items-center justify-center text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+          class="absolute top-5 right-5 md:top-6 md:right-6 w-14 h-14 flex items-center justify-center text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-full bg-fg/5 hover:bg-fg/10 transition-colors"
           @click="mobileOpen = false"
           aria-label="Fermer le menu"
         >
           ✕
         </button>
         <RouterLink
-          v-for="link in links"
+          v-for="(link, index) in links"
           :key="link.to"
           :to="link.to"
-          class="font-heading text-[2rem] font-normal transition-colors duration-300 hover:text-accent"
+          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          :style="{ transitionDelay: `${index * 100}ms` }"
           @click="mobileOpen = false"
         >
           {{ link.label }}
@@ -97,5 +98,14 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 .mobile-menu-enter-from,
 .mobile-menu-leave-to {
   transform: translateY(-100%);
+}
+
+.mobile-menu-enter-from .mobile-link {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.mobile-menu-enter-active .mobile-link {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
