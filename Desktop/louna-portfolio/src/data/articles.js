@@ -82,24 +82,28 @@ export const articles = [
     title: 'Sans facs — Reportage sur les étudiants décrocheurs',
     source: 'Horizons Médiatiques',
     category: 'horizons',
+    cover: '/images/covers/sans-facs.jpg',
   },
   {
     id: 'ice',
     title: 'ICE — Enquête sur les centres de rétention',
     source: 'Horizons Médiatiques',
     category: 'horizons',
+    cover: '/images/covers/ice.jpg',
   },
   {
     id: 'cancer-sein',
     title: 'Cancer du sein — Enquête et sensibilisation',
     source: 'Horizons Médiatiques',
     category: 'horizons',
+    cover: '/images/covers/cancer-sein.jpg',
   },
   {
     id: 'bondie-blog',
     title: 'Bondie Blog — Voix des quartiers populaires',
     source: 'Horizons Médiatiques',
     category: 'horizons',
+    cover: '/images/covers/bondie-blog.jpg',
   },
   // ── Paris Normandie ──
   {
