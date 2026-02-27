@@ -107,36 +107,42 @@ export const articles = [
     title: 'Casque Bleu — Portrait d\'un engagement humanitaire',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/casque-bleu.jpeg',
   },
   {
     id: 'ecopaturage',
     title: 'Écopâturage — Quand les moutons entretiennent la ville',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/ecopaturage.jpg',
   },
   {
     id: 'amandine-btp',
     title: 'Amandine BTP — Femmes dans le bâtiment',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/amandine-btp.jpeg',
   },
   {
     id: 'tour-de-france',
     title: 'Tour de France — L\'événement vu de l\'intérieur',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/tour-de-france.jpeg',
   },
   {
     id: 'caramel-pommes',
     title: 'Caramel de pommes — Savoir-faire normand',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/caramel-pommes.jpeg',
   },
   {
     id: 'bateau',
     title: 'Le bateau — Reportage maritime',
     source: 'Paris Normandie',
     category: 'paris',
+    cover: '/images/covers/bateau.jpeg',
   },
   // ── Club de la Presse ──
   {
@@ -144,18 +150,21 @@ export const articles = [
     title: 'Éducation aux médias — Ateliers EMI (1)',
     source: 'Club de la Presse Lyon',
     category: 'club',
+    cover: '/images/covers/emi-1.jpeg',
   },
   {
     id: 'emi-2',
     title: 'Éducation aux médias — Ateliers EMI (2)',
     source: 'Club de la Presse Lyon',
     category: 'club',
+    cover: '/images/covers/emi-2.jpeg',
   },
   {
     id: 'emi-3',
     title: 'Éducation aux médias — Ateliers EMI (3)',
     source: 'Club de la Presse Lyon',
     category: 'club',
+    cover: '/images/covers/emi-3.jpeg',
   },
 ]
 
