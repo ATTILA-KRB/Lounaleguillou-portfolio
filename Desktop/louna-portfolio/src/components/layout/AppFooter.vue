@@ -1,7 +1,7 @@
 <template>
   <footer
     class="px-6 md:px-16 py-8"
-    :class="dark ? 'bg-fg border-t border-white/8' : 'bg-bg border-t border-fg/10'"
+    :class="dark ? 'bg-[#1A1A1A] border-t border-white/8' : 'bg-bg border-t border-fg/10'"
   >
     <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
       <span

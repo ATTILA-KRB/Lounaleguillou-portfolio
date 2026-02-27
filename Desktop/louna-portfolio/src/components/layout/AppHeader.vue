@@ -28,6 +28,13 @@
         >
           LinkedIn ↗
         </a>
+        <button
+          @click="toggle"
+          class="w-8 h-8 flex items-center justify-center text-muted-fg hover:text-accent transition-colors duration-500 cursor-pointer"
+          :aria-label="isDark ? 'Passer en mode clair' : 'Passer en mode sombre'"
+        >
+          <span class="text-[1.1rem]">{{ isDark ? '\u2600' : '\u263E' }}</span>
+        </button>
       </div>
 
       <!-- Burger mobile -->
@@ -76,6 +83,13 @@
         >
           LinkedIn ↗
         </a>
+        <button
+          @click="toggle"
+          class="font-heading text-[2.2rem] sm:text-[2.8rem] font-normal transition-all duration-500 hover:text-accent p-4 w-full text-center mobile-link"
+          :style="{ transitionDelay: `${(links.length + 1) * 100}ms` }"
+        >
+          {{ isDark ? '\u2600 Mode clair' : '\u263E Mode sombre' }}
+        </button>
       </div>
     </Transition>
   </Teleport>
@@ -83,6 +97,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useTheme } from '@/composables/useTheme.js'
+
+const { isDark, toggle } = useTheme()
 
 const links = [
   { to: '/', label: 'Accueil' },

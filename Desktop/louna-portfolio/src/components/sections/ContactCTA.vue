@@ -1,5 +1,5 @@
 <template>
-  <section class="px-6 md:px-16 py-16 sm:py-20 md:py-28 bg-fg text-accent-fg fade-in">
+  <section class="px-6 md:px-16 py-16 sm:py-20 md:py-28 bg-[#1A1A1A] text-white fade-in">
     <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-center">
       <!-- Title — 7 cols -->
       <h2 class="lg:col-span-7 font-heading text-[2.5rem] md:text-[3rem] font-normal leading-[1.05] fade-in">
