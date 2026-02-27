@@ -1,5 +1,5 @@
 <template>
-  <div class="fade-in">
+  <div>
     <section class="px-6 md:px-16 pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 fade-in">
       <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
         <!-- Left — info -->
