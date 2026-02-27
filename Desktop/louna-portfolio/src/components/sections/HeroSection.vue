@@ -25,8 +25,8 @@
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mt-2">
           <BaseButton to="/portfolio" class="w-full sm:w-auto">Voir mon travail</BaseButton>
-          <BaseButton variant="secondary" href="/cv-louna-le-guillou.pdf" class="w-full sm:w-auto">
-            Télécharger mon CV
+          <BaseButton variant="secondary" href="https://www.linkedin.com/in/louna-le-guillou-880b3b269/" target="_blank" rel="noopener" class="w-full sm:w-auto">
+            LinkedIn ↗
           </BaseButton>
         </div>
       </div>
